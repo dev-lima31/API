@@ -1,0 +1,32 @@
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.csproj.AssemblyReference.cache
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.AssemblyInfoInputs.cache
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.AssemblyInfo.cs
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.csproj.CoreCompileInputs.cache
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\appsettings.json
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\não entendo mais nada.exe
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\não entendo mais nada.deps.json
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\não entendo mais nada.runtimeconfig.json
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\não entendo mais nada.dll
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\não entendo mais nada.pdb
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\452257624\Documents\não entendo mais nada\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets\msbuild.não entendo mais nada.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets\msbuild.build.não entendo mais nada.props
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.não entendo mais nada.props
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.não entendo mais nada.props
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\scopedcss\bundle\não entendo mais nada.styles.css
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não ente.49929E10.Up2Date
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.dll
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\refint\não entendo mais nada.dll
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.pdb
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.genruntimeconfig.cache
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\ref\não entendo mais nada.dll
