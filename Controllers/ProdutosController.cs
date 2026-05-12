@@ -12,29 +12,43 @@ namespace não_entendo_mais_nada.Controllers
     {
         private static List<Produto> produtos = new List<Produto>()
         {
-            new Produto{Id=1, Nome="Cacete", Preco=1200},
-            new Produto{Id=2, Nome="Caralho", Preco=1800}
+            new Produto{Id=1, Nome="", Preco=1200},
+            new Produto{Id=2, Nome="Caralho", Preco=10},
+            new Produto{Id=3, Nome="numsouhomi", Preco=1}
         };
-    [HttpGet("Homi/{id}")]
-    public ActionResult<IEnumerable<Produto>> GetPorId(int id)
+        [HttpGet("Homi/{id}")]
+        public ActionResult<IEnumerable<Produto>> GetPorId(int id)
         {
             var IdProduto = produtos.FirstOrDefault(p => p.Id == id);
-            if(IdProduto.Id == null)
+            if (IdProduto.Id == null)
             {
                 return NotFound(IdProduto);
             }
             return Ok(IdProduto);
         }
-    [HttpGet("Arroz")]
-     public ActionResult<IEnumerable<Produto>> GetTodos()
+        [HttpGet("Arroz")]
+        public ActionResult<IEnumerable<Produto>> GetTodos()
         {
             return Ok(produtos);
         }
-    [HttpGet("feijao/{preco}")]
-    public ActionResult<IEnumerable<Produto>> AcimadeCem(double preco)
+        [HttpGet("feijao/{gaia}")]
+        public ActionResult<IEnumerable<Produto>> GetAcima(double gaia)
         {
-            for(int i = 1, i)
+            var vaccari = produtos.Where(p => p.Preco > gaia).ToList();
+            return Ok(vaccari);
         }
-
+        [HttpGet("merda/{nome}")]
+        public ActionResult<IEnumerable<Produto>> GetNome(string nome)
+        {
+            var nomezin = produtos.Where(p => p.Nome == nome).ToList();
+            return Ok(nomezin);
+        }
+        [HttpPost("risada")]
+        public ActionResult Post([FromBody] Produto novoItem)
+        {
+            novoItem.Id = produtos.Count + 1;
+            produtos.Add(novoItem);
+            return CreatedAtAction(nameof(GetPorId), new { id = novoItem.Id }, novoItem);
+        }
     }
 }

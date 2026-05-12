@@ -21,5 +21,18 @@ namespace não_entendo_mais_nada.Controllers
         {
             return Ok(clientes);
         }
+        [HttpGet("Sim/{id}")]
+        public ActionResult<IEnumerable<Cliente>> GetPorId(int id)
+        {
+            var eujativela = clientes.FirstOrDefault(n => n.Id == id);
+            return Ok(eujativela);
+        }
+        [HttpPost("cesar")]
+         public ActionResult Post([FromBody] Cliente novoClient)
+        {
+            novoClient.Id = clientes.Count + 1;
+            clientes.Add(novoClient);
+            return CreatedAtAction(nameof(GetPorId), new { id = novoClient.Id }, novoClient);
+        }
     }
 }

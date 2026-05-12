@@ -30,3 +30,4 @@ C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\refint\não
 C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.pdb
 C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.genruntimeconfig.cache
 C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\ref\não entendo mais nada.dll
+C:\Users\452257624\Documents\não entendo mais nada\obj\Debug\net8.0\não entendo mais nada.sourcelink.json

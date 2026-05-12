@@ -22,6 +22,20 @@ namespace não_entendo_mais_nada.Controllers
         {
             var cafe = alunos.FirstOrDefault(a => a.Id == id);
             return cafe == null ? NotFound() : Ok(cafe);
-         }
+        }
+        [HttpPost("risada")]
+        public ActionResult Post([FromBody] Aluno novoAluno)
+        {
+            novoAluno.Id = alunos.Count + 1;
+            alunos.Add(novoAluno);
+            return CreatedAtAction(nameof(GetId), new { id = novoAluno.Id }, novoAluno);
+        }
+        [HttpPost("para")]
+        public Aluno post2([FromBody] Aluno novoAluno)
+        {
+
+            alunos.Add(novoAluno);
+            return novoAluno;
+        }
     }
 }
