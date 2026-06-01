@@ -23,5 +23,35 @@ namespace não_entendo_mais_nada.Controllers
             var livroId = livros.FirstOrDefault(l => l.Id == id);
             return Ok(livroId);
         }
+        [HttpPost("livrosadicionados")]
+        public ActionResult<IEnumerable<Livro>> PostLivros([FromBody] Livro novolivro)
+        {
+            novolivro.Id = livros.Count + 1;
+            livros.Add(novolivro);
+            return CreatedAtAction(nameof(GetPorId), new { id = novolivro.Id }, novolivro);
+        }
+        [HttpPut("uouLivros/{id}")]
+        public ActionResult<Livro> editarLivro(int id, Livro livro)
+        {
+            var busca = livros.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound("nadica");
+            }
+            busca.Nome = livro.Nome;
+            busca.Lancamento = livro.Lancamento;
+            return Ok(livros);
+        }
+        [HttpDelete("excluirLivros/{id}")]
+        public ActionResult<Livro> DeletarCliente(int id)
+        {
+            var busca = livros.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound(busca);
+            }
+            livros.Remove(busca);
+            return Ok(livros);
+        }
     }
 }

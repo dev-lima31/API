@@ -30,12 +30,42 @@ namespace não_entendo_mais_nada.Controllers
             alunos.Add(novoAluno);
             return CreatedAtAction(nameof(GetId), new { id = novoAluno.Id }, novoAluno);
         }
-        [HttpPost("para")]
-        public Aluno post2([FromBody] Aluno novoAluno)
-        {
+        // [HttpPost("para")]
+        // public Aluno post2([FromBody] Aluno novoAluno)
+        // {
 
-            alunos.Add(novoAluno);
-            return novoAluno;
+        //     alunos.Add(novoAluno);
+        //     return novoAluno;
+        // }
+        [HttpPut("aaaaaaaaaaaaa/{id}")]
+        public ActionResult<Aluno> editarAluno(int id, Aluno aluno)
+        {
+            var busca = alunos.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound("nadica");
+            }
+            busca.Nome = aluno.Nome;
+            busca.Idade = aluno.Idade;
+            // return Ok(alunos);
+            return NoContent();
+        }
+        [HttpDelete("apagarAluno/{id}")]
+        public ActionResult<Aluno> DeletarAluno(int id)
+        {
+            var busca = alunos.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound(busca);
+            }
+            alunos.Remove(busca);
+            return Ok(alunos);
+        }
+        [HttpDelete("apagartudao")]
+        public ActionResult<Aluno> clearTudo()
+        {
+            alunos.Clear();
+            return Ok(alunos);
         }
     }
 }

@@ -28,11 +28,34 @@ namespace não_entendo_mais_nada.Controllers
             return Ok(eujativela);
         }
         [HttpPost("cesar")]
-         public ActionResult Post([FromBody] Cliente novoClient)
+        public ActionResult Post([FromBody] Cliente novoClient)
         {
             novoClient.Id = clientes.Count + 1;
             clientes.Add(novoClient);
             return CreatedAtAction(nameof(GetPorId), new { id = novoClient.Id }, novoClient);
+        }
+        [HttpPut("uou/{id}")]
+        public ActionResult<Cliente> editarCliente(int id, Cliente cliente)
+        {
+            var busca = clientes.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound("nadica");
+            }
+            busca.Nome = cliente.Nome;
+            busca.Idade = cliente.Idade;
+            return Ok(clientes);
+        }
+        [HttpDelete("excluirCliente/{id}")]
+        public ActionResult<Cliente> DeletarCliente(int id)
+        {
+            var busca = clientes.FirstOrDefault(b => b.Id == id);
+            if (busca == null)
+            {
+                return NotFound(busca);
+            }
+            clientes.Remove(busca);
+            return Ok(clientes);
         }
     }
 }
